@@ -23,13 +23,14 @@ Authorization: Bearer <token>
 # Auth Endpoints
 1. Register
 
-POST /api/auth/register
+POST https://notmrp-backend.onrender.com/api/auth/register
 Headers: Content-Type: application/json
 
 Body:
 
 {
   "businessName": "My Shop",
+
   "email": "owner@shop.com",
   "username": "owner123",
   "password": "secret123"
@@ -48,7 +49,7 @@ Response:
 
 2. Login
 
-POST /api/auth/login
+POST https://notmrp-backend.onrender.com/api/auth/login
 Headers: Content-Type: application/json
 
 Body:
@@ -72,7 +73,7 @@ Response:
 
 3. Logout
 
-GET /api/auth/logout
+GET https://notmrp-backend.onrender.com/api/auth/logout
 Headers: Authorization: Bearer <token>
 
 Response:
@@ -84,7 +85,7 @@ Response:
 # Products Endpoints
 List Products
 
-GET /api/products?q=&category=
+GET https://notmrp-backend.onrender.com/api/products?q=&category=
 Headers: Authorization: Bearer <token>
 
 Response:
@@ -101,7 +102,7 @@ Response:
 
 Create Product
 
-POST /api/products/create
+POST https://notmrp-backend.onrender.com/api/products/create
 Headers:
 Authorization: Bearer <token>
 Content-Type: application/json
@@ -129,7 +130,7 @@ Response:
 
 Update Product
 
-PUT /api/products/update/:id
+PUT https://notmrp-backend.onrender.com/api/products/update/:id
 Headers: Authorization: Bearer <token>
 Body:
 
@@ -140,12 +141,12 @@ Body:
 
 Delete Product
 
-DELETE /api/products/remove/:id
+DELETE https://notmrp-backend.onrender.com/api/products/remove/:id
 Headers: Authorization: Bearer <token>
 
 Adjust Stock
 
-POST /api/products/adjust-stock/:id
+POST https://notmrp-backend.onrender.com/api/products/adjust-stock/:id
 Headers: Authorization: Bearer <token>
 Body:
 
@@ -156,12 +157,12 @@ Body:
 # Contacts Endpoints
 List Contacts
 
-GET /api/contacts?q=&type=customer
+GET https://notmrp-backend.onrender.com/api/contacts?q=&type=customer
 Headers: Authorization: Bearer <token>
 
 Create Contact
 
-POST /api/contacts/create
+POST https://notmrp-backend.onrender.com/api/contacts/create
 Headers:
 Authorization: Bearer <token>
 Content-Type: application/json
@@ -177,7 +178,7 @@ Body:
 
 Update Contact
 
-PUT /api/contacts/update/:id
+PUT https://notmrp-backend.onrender.com/api/contacts/update/:id
 Headers: Authorization: Bearer <token>
 Body:
 
@@ -187,18 +188,18 @@ Body:
 
 Delete Contact
 
-DELETE /api/contacts/remove/:id
+DELETE https://notmrp-backend.onrender.com/api/contacts/remove/:id
 Headers: Authorization: Bearer <token>
 
 # Transactions Endpoints
 List Transactions
 
-GET /api/transactions?type=sale&from=2025-01-01&to=2025-12-31
+GET https://notmrp-backend.onrender.com/api/transactions?type=sale&from=2025-01-01&to=2025-12-31
 Headers: Authorization: Bearer <token>
 
 Create Transaction
 
-POST /api/transactions/create
+POST https://notmrp-backend.onrender.com/api/transactions/create
 Headers: Authorization: Bearer <token>
 Body (Sale Example):
 
@@ -224,12 +225,12 @@ Body (Purchase Example):
 # Reports Endpoints
 Inventory Report
 
-GET /api/reports/inventory
+GET https://notmrp-backend.onrender.com/api/reports/inventory
 Headers: Authorization: Bearer <token>
 
 Transactions Report
 
-GET /api/reports/transactions?from=&to=&type=
+GET https://notmrp-backend.onrender.com/api/reports/transactions?from=&to=&type=
 Headers: Authorization: Bearer <token>
 
 
