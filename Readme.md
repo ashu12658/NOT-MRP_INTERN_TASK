@@ -1,7 +1,6 @@
 Clone repo
 
-git clone <repo-url>
-cd backend
+gh repo clone ashu12658/NOT-MRP_INTERN_TASK
 
 Copy env file
 cp .env.example .env
